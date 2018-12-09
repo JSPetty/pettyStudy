@@ -23,6 +23,7 @@ module.exports = {
     '$': 'window.jQuery',
     'jQuery': 'window.jQuery',
     'Vue': 'window.Vue',
+    // 'element-ui': 'window.ELEMENT',
     // 'VueRouter': 'window.VueRouter',
     'layer': 'window.layer',
     'echarts': 'window.echarts'
