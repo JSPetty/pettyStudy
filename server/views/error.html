@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>京东云控制台</title>
+    <meta http-equiv='content-type' content='text/html;charset=utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <link rel='shortcut icon' href='/favicon.ico' />
+    <script src='/dist/js/jquery/jquery.min.js'></script>
+    <style>
+      #app{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+      }
+      .wrap404 {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+      }
+      .out-service {
+        padding: 140px 0 310px 220px;
+        margin-bottom: 50px;
+        background: url("../../dist/img/out-service.png")  no-repeat;
+      }
+      .error-tips p {
+        padding: 40px 0 20px;
+        font-size: 16px;
+      }
+      .error-tips .btn{
+        display: block;
+        width: 120px;
+        height: 35px;
+        background: #27ade5;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+      }
+      .mainCon{
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar"></header>
+    <section class='YnaviContent'>
+      <div class='mainMenu'></div>
+      <div class='subMenu'></div>
+      <div id='app'>
+        <div class="mainCon trans">
+          <div class="mainCon trans" style="margin-left: 168px;">
+            <div class="wrap404">
+              <div class="out-service">
+                <div class="error-tips">
+                  <p>系统维护中，请稍后访问...</p>
+                  <a href="//back.jcloud.com" class="btn">返回首页</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+

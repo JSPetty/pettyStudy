@@ -1,0 +1,44 @@
+#!/bin/sh
+cd "$(dirname $0)"/.. || exit 1
+PROC_NAME='jsec-jcloud-server'
+help(){
+    echo "${0} <start|stop|restart|status>"
+    exit 1
+}
+status(){
+    status=$(pm2 show $PROC_NAME | grep status | awk '{print $4}')
+    echo $status
+    if [ X"$status" == X"online" ]; then
+        return 0
+    else
+        return 1
+    fi
+}
+start(){
+    pm2 set pm2-logrotate:max_size 100M
+    pm2 set pm2-logrotate:retain 15
+    pm2 start ./server/bin/www --name $PROC_NAME -l "../log/jsec-jcloud-server"
+}
+restart(){
+    pm2 restart $PROC_NAME
+}
+stop(){
+    pm2 stop $PROC_NAME
+}
+case "${1}" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status|health|checkhealth|st)
+        status
+        ;;
+    restart)
+        restart
+        ;;
+    *)
+        help
+        ;;
+esac

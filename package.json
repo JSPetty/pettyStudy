@@ -1,0 +1,63 @@
+{
+  "name": "pettyStudy",
+  "version": "0.0.1",
+  "author": "JT",
+  "scripts": {
+    "installDepc": "cross-env NODE_ENV=production npm install",
+    "start": "cross-env NODE_ENV=development node ./server/bin/www",
+    "build": "cross-env NODE_ENV=production webpack --colors --profile --progress --display-modules",
+    "server": "cross-env NODE_ENV=production node ./server/bin/www"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/traverse": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "json-loader": "^0.5.7",
+    "url-loader": "^1.1.2",
+    "vue": "^2.5.18",
+    "vue-hot-reload-api": "^2.3.1",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^15.4.2",
+    "vue-router": "^3.0.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.18",
+    "vuex": "^3.0.1",
+    "webpack-cli": "3.1.2",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "archiver": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cookie-parser": "^1.4.3",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.0.0",
+    "debug": "^4.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "html-webpack-plugin": "^3.2.0",
+    "http-proxy-middleware": "^0.19.1",
+    "iconv-lite": "^0.4.24",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.3.0",
+    "serve-favicon": "^2.5.0",
+    "to-string-loader": "^1.1.5",
+    "webpack": "^4.27.1",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-hot-middleware": "^2.24.3"
+  },
+  "homepage": "https://github.com/JSPetty/pettyStudy.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JSPetty/pettyStudy.git"
+  }
+}
